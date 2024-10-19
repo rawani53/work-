@@ -49,14 +49,17 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun unitconverter() {
+fun unitconverter()  {
     Column(modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally)
-    {
+        horizontalAlignment = Alignment.CenterHorizontally)  {
+
         Text("unit converter" , modifier = Modifier.padding(20.dp))
+
         OutlinedTextField(value = "Enter value", onValueChange = {})
+
         Spacer(modifier = Modifier.height(25.dp))
+
         Row {
             Box {
                 Button(onClick = {})
@@ -79,16 +82,10 @@ fun unitconverter() {
 
     }
 }
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
 @Preview(showBackground = true)
 @Composable
-fun unitconverterPreview(){
+fun unitconverterPreview()
+{
     unitconverter()
 }
