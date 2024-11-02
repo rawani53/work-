@@ -1,4 +1,4 @@
 package second.app.counter
 
-class BaseClass {
+class counterModel {
 }
